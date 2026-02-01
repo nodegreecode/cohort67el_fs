@@ -1,0 +1,28 @@
+const brothers = [
+    {race: "hobbit", height: 110, age: 45, name: "Frodo Baggins"},
+    {race: "human", height: 185, age: 46, name: "Aragorn"},
+    {race: "elf", height: 189, age: 110, name: "Legolas"},
+    {race: "dworf", height: 140, age: 150, name: "Gimly"},
+    {race: "human", height: 195, age: 200, name: "Gandalf"},
+];
+
+const [frodo, ragorn, legolas, gimly, gandalf] = brothers;
+
+console.log(frodo);
+
+const user = {
+    id: 1,
+    email: "user@mail.com",
+    login: "funny_user",
+};
+
+const {id, email, login} = user;
+
+console.log(id + ' ' + email + ' ' + login);
+
+const fruits = ['cars', 'bike', 'plan'];
+console.log(fruits);
+
+const mechanics = [...fruits];
+mechanics.push('truck');
+console.log(mechanics);
