@@ -1,0 +1,33 @@
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F6F6F;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;;
+    border-radius: 4px;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: border-color ease-in-out .15s;
+}
+
+.input:focus {
+    outline: 1px solid #1F27F5;
+}
+
+.input::placeholder {
+    opacity: .4;
+    font-size: 16px;
+}
