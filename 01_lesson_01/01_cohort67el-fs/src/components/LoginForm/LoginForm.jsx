@@ -3,6 +3,10 @@ import Input from '../Input/Input.jsx';
 import Button from '../Button/Button.jsx';
 
 function LoginForm() {
+  /* const login = (event) => {
+  event.preventDefault();
+  console.log('Button Login works!!!');
+};*/
   return (
     <>
       <form>
@@ -22,6 +26,13 @@ function LoginForm() {
           />
         </div>
         <Button name="Login" type="submit" />
+        {/*<Button onClick={login} name="Login" type="submit" />*/}
+        {/*<button onClick={login} type="button">
+          Login
+        </button>*/}
+        {/*<button onClick={() => login('Button works!!!')} type="button">
+          Login
+        </button> */}
       </form>
     </>
   );
