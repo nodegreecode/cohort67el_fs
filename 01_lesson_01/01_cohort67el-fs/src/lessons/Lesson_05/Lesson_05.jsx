@@ -5,6 +5,14 @@ import { v4 } from 'uuid';
 
 function Lesson_05() {
   const [order, setOrder] = useState([]);
+  const buttonsNames = [
+    'Burger',
+    'Fries',
+    'Cola',
+    'Salad',
+    'Ketchup',
+    'Ice-cream',
+  ];
 
   const addItem = (itemName) => {
     setOrder((prevValue) => {
@@ -12,20 +20,25 @@ function Lesson_05() {
     });
   };
 
-  console.log(order);
+  const menuButtons = buttonsNames.map((buttonName) => {
+    return (
+      <div key={v4()} className="button_control">
+        <Button name={buttonName} onClick={() => addItem(buttonName)} />
+      </div>
+    );
+  });
 
   const finalOrder = order.map((item, index) => {
     return <li key={v4()}>{item}</li>;
   });
-
-  console.log(finalOrder);
 
   return (
     <div className="lesson_05_wrapper">
       <div className="menu_wrapper">
         <h1 className="menu">Menu:</h1>
         <div className="button_wrapper">
-          <div className="button_control">
+          {menuButtons}
+          {/* <div className="button_control">
             <Button name="Burger" onClick={() => addItem('Burger')} />
           </div>
           <div className="button_control">
@@ -45,7 +58,7 @@ function Lesson_05() {
           </div>
           <div className="button_control">
             <Button name="Ice-cream" onClick={() => addItem('Ice-cream')} />
-          </div>
+          </div>*/}
         </div>
       </div>
 
