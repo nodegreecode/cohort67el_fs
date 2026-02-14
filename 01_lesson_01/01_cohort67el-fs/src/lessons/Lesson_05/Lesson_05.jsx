@@ -22,7 +22,7 @@ function Lesson_05() {
 
   const menuButtons = buttonsNames.map((buttonName) => {
     return (
-      <div className="button_control">
+      <div key={v4()} className="button_control">
         <Button name={buttonName} onClick={() => addItem(buttonName)} />
       </div>
     );
