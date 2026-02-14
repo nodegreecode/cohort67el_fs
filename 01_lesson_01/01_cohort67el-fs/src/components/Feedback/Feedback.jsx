@@ -6,8 +6,8 @@ function Feedback() {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
 
-  const addLike = () => setLikes(likes + 1);
-  const addDislike = () => setDislikes(dislikes + 1);
+  const addLike = () => setLikes((prevValue) => prevValue + 1);
+  const addDislike = () => setDislikes((prevValue) => prevValue + 1);
   const resetFeedbacks = () => {
     setLikes(0);
     setDislikes(0);
